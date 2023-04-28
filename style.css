@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+    body {
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        background-color: rgb(28, 29, 31);
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+
+        .main-wrapper {
+            display: flex;
+            flex-direction: row;
+            place-content: center center;
+            height: 100vh;
+            /* padding: 2.5rem 0rem; */
+        }
+
+            .app-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 38rem;
+                margin: 1.5rem 0rem;
+
+
+                background: linear-gradient(135deg, #800080, #ffa4b3);
+                background-size: 1000px;
+                color: #fff;
+                border-radius: 20px;
+                padding: 40px 35px;
+                text-align: center;
+            }
+
+                .content-section {
+                    opacity: 0;
+                }
+
+                .search-bar {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .app-div {
+                    width: 100%;
+
+                }
+
+                .search-bar input {
+                    background: #ebfffc;
+                    color: #555;
+                    padding: 10px 25px;
+                    height: 60px;
+                    border-radius: 30px;
+                    border: 0;
+                    outline: 0;
+                    flex: 1;
+                    margin-right: 1rem;
+                    font-size: 18px;
+                }
+
+                .search-bar button {
+                    border: 0;
+                    outline: 0;
+                    background: #ebfffc;
+                    border-radius: 50%;
+                    width: 60px;
+                    height: 60px;
+                    cursor: pointer;
+
+                }
+
+                .search-bar img {
+                    width: 16px;
+                }
+
+
+                .weather-icon {
+                    width: 220px;
+                    height: 220px;
+
+                    margin-top: 4rem;
+
+                }
+
+                .content-section h1 {
+                    font-size: 80px;
+                    font-weight: 500;
+                    margin-top: 0;
+                    margin-bottom: 0.5rem;
+                }
+                .content-section h2 {
+                    font-size: 45px;
+                    font-weight: 400;
+                    margin-top: -10px;
+                    margin-bottom: 0;
+
+
+                }
+
+
+
+                .bottom-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 20px;
+                    margin-top: 50px;
+                }
+
+                    .--row {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+
+                        width: 50%;
+                    }
+
+                    .--row img {
+                        width: 57px;
+                        margin-right: 10px;
+                        margin-left: 25px;
+                    }
+
+                .personal-feeling, .max-temperature, .conditions, .angle-of-impact, .wind, .humidity {
+                    font-size: 28px;
+                    margin-top: -6px;
+                }
+
+                .srb-style {
+                    padding-right: 10px;
+                }
+
+
+            
+
+            
+
+            .options-wrapper {
+                margin: 1.5rem 0rem;
+                animation: fadeIn forwards 1.5s;
+
+                /* background-color: aquamarine; */
+            }
+
+
+                .language-div {
+                    margin: 2rem;
+
+                    color: white;
+                }
+
+                .--lang {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid rgb(236, 236, 236);
+
+                    margin: 1rem 2rem 0rem 2rem;
+
+                    color: white;
+                }
+
+                .--lang img {
+                    margin: 0rem 0.5rem;
+                }
+
+                .--lang input {
+                    margin-right: 0.5rem;
+                }
+
+        .fade-in-text {
+            animation: fadeIn forwards 1.5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity:0;
+              }
+            
+            100% {
+                opacity:1;
+              } 
+        }

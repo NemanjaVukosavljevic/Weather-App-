@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="app-wrapper">
+            <div class="app-div">
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter city name">
+                    <button><img src="./animated/search.png" alt="search icon"></button>
+                </div>
+
+                <div class="content-section">
+                    <img class="weather-icon" src="./animated/cloudy-day-1.svg" alt="animated picture of daylight">
+                    <h1 class="temperature">°C</h1>
+                    <h2 class="city"></h2>
+                    <div class="bottom-content">
+                        <div class="--row" style="margin-left: 5px;">
+                            
+                            <img src="./images/4908701_cold_freeze_season_snowflake_temperature_icon.svg">
+
+                            <div>
+                                <p class="personal-feeling">°C</p>
+                                <p class="p-personal-feeling"></p>
+                            </div>
+                        </div>
+
+                        <div class="--row">
+
+                            <img src="./images/3859153_climate_forecast_plus_temperature_weather_icon.svg">
+
+                            <div>
+                                <p class="max-temperature">°C</p>
+                                <p class="p-max-temperature"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-content">
+                        <div class="--row">
+                            
+                            <img src="./images/3859152_climate_forecast_hurricane_typhoon_weather_icon.svg">
+
+                            <div>
+                                <p class="humidity">%</p>
+                                <p class="p-humidity"></p>
+                            </div>
+                        </div>
+
+                        <div class="--row srb-active" style="padding-right: 1px;">
+
+                            <img src="./images/4894512_air_blow_direction_nature_weather_icon.svg">
+
+                            <div>
+                                <p class="wind"> km/h</p>
+                                <p class="p-wind"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-content">
+                        <div class="--row">
+                            
+                            <img src="./images/2682832_cloud_day_forecast_sun_weather_icon.svg">
+
+                            <div>
+                                <p class="conditions"></p>
+                                <p class="p-conditions"></p>
+                            </div>
+                        </div>
+
+                        <div class="--row" style="padding-right: 8px;">
+
+                            <img src="./images/2682810_catcher_direction_flag_weather_wind_icon.svg">
+
+                            <div>
+                                <p class="angle-of-impact">°</p>
+                                <p class="p-angle-of-impact"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="options-wrapper">
+            <div class="language-div">
+                <h2>Select preffered language</h2>
+            </div>
+
+            <div class="--lang">
+                <img src="./images/icons8-england-48.png" alt="GB flag">
+                <input type="radio" name="radio" checked class="input-flag">
+                <label for="radio">English</label>
+            </div>
+
+            <div class="--lang">
+                <img src="./images/icons8-serbia-48.png" alt="SR flag">
+                <input type="radio" name="radio" class="input-flag-srb">
+                <label for="radio">Serbian</label>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    <script src="weatherapp.js"></script>
+</body>
+</html>
